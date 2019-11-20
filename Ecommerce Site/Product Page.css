@@ -1,0 +1,155 @@
+html{
+    font-family: 'Montserrat';
+}
+header {
+    background-color:black;
+    color: white;
+    font-size: 30px;
+    height: 108px;
+    left: 0px;
+    line-height: 0.5;
+    margin: 0;
+    margin-left: 0;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+/*-----------------------------Thumbnails for Clothes--------------------------------------*/
+.clothes_viewer{
+    float: left;
+    overflow: hidden;
+}
+.clothes_viewer section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 128px;
+}
+.clothes_viewer article{
+    cursor: pointer;
+    opacity: 0.8;
+    width: 150px;
+}
+.clothes_viewer img:nth-of-type(2){
+    height: 50px;
+}
+.clothes_viewer img{
+    cursor: pointer;
+    max-width: 100%;
+    opacity: 0.8;
+}
+.clothes_viewer:hover{
+    opacity: 1;
+}
+
+/******************************View Pane*****************************************************/
+.viewpane{
+    overflow: visible;
+}
+.viewpane section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    padding-left: 100px;
+    padding-top: 245px;
+}
+.viewpane article{
+    background-image: url("adobo_logo.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 474px;
+    width: 474px;
+}
+/*****************************Rating CSS***************************************************/
+/**********Code from: https://css-tricks.com/star-ratings/********************************/
+.product_info {
+    unicode-bidi: bidi-override;
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+  .product_info > span {
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+    width: 1.1em;
+  }
+  .product_info > span:hover:before, .product_info> span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+  .product_info > h1{
+    font-size: 40px;
+  }
+  .product_info > button{
+      background-color: black;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 30px;
+      width: 500px;
+      height: 150px;
+  }
+
+/**********************************Also Bought*******************************************/
+.sections_bar{
+    margin-top: 250px;
+    width: 70%;
+}
+.sections_bar h1{
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+/**********************************More Clothes*******************************************/
+.featured{
+    display: flex; 
+}
+.featured aside {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.featured aside:nth-of-type(1){
+    background-image: url("Adobo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 260px;
+}
+.featured aside:nth-of-type(2){
+    background-image: url("guccie.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 300px;
+}
+.featured aside:nth-of-type(3){
+    background-image: url("supmeme.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 260px;
+}
+.featured aside:nth-of-type(4){
+    background-image: url("xmas shirt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 250px;
+}
+
+  /*************************Comment Section************************************************/
+  .comment_section{
+      overflow: hidden;
+      padding-top: 100px;
+  }
+  .comment_section #example{
+      height: 50px;
+      width: 500px;
+  }

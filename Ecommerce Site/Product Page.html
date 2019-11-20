@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Product Page.css">
+        <script src="slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>The Visoria</h1>
+        </header>
+        
+        <!--Thumbnails for different views of clothing-->
+        <!--Some code from w3Schools-->
+        <div class = clothes_viewer>
+            <section> 
+                <article>
+                    <img src="adobo_logo.jpeg" onclick="myFunction(this);">
+                </article>
+                        
+                <article>
+                    <img src="Adobo.jpg" onclick="myFunction(this);">
+                </article>
+                        
+                <article>
+                    <img src="Adobo_model_front.png" onclick="myFunction(this);">
+                </article>
+
+                <article>
+                    <img src="Adobo_model_back.png" onclick="myFunction(this);">
+                </article>
+            </section>
+        </div>
+        <!------------------------------View Pane------------------------------------------->
+        <div class = viewpane>
+            <section>
+                <article>
+                    <img id="expandedImg">
+                </article>
+        <!------------------------------Product name, price, description-------------------->
+                <div class="product_info">
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    <h1>Adobo Shirt</h1>
+                    <h2>$25.00</h2>
+                    <p>Completely legit Adidas Shirt complete with official Adidas logo.</p>
+                    <p>All Sales Final!</p>
+                    <button>Add to Cart</button>
+                </div>
+        <!------------------------------------------Sections Bar---------------------------->
+                <div class ="sections_bar">
+                    <h1>Featured</h1>
+                </div>
+
+        <!----------------------------------Featured Clothes Bar---------------------------->
+                <div class="featured">
+                    <aside>
+                        <!--Adobo Image-->
+                    </aside>
+                    <aside>
+                        <!--Guccy Image-->
+                    </aside>
+                    <aside>
+                        <!--Supreme Shirt-->
+                    </aside>
+                    <aside>
+                        <!--Holiday Shirt-->
+                    </aside>
+                </section>
+                </div>
+
+                <!--Code from: https://jsfiddle.net/8ushhr5c/-->
+                <div class = "comment_section">
+                    <div class="info">
+                        <label for="example">Comments:<br></br></label>
+                        <input id="example" type="text" name="Ntext" size="20"><br></br>
+                        <input id="sent" type="submit" value="Send"> 
+                    </div>
+                        <p id="para"></p>
+                        <script src="comments.js"></script>
+
+                    <p>This kinda slaps!</p>
+                    <p>I went searching for clothes now I'm recipe hunting!</p>
+                    <p>YAHAHA! You found this comment!</p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
